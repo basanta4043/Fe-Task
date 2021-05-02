@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Employee registration</title>
+    <style>
+        
+        .form{
+          margin:10px;
+          padding: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <form action="" class="form">
+      <h3>Employee Registration form</h3>
+      <h5>Fill all the required field:</h5>
+        <div class="col-3"> 
+           First Name: <input type="text" name="" id="" class="form-control" placeholder="First Name" required pattern="[A-Za-z]+">
+           Last Name: <input type="text" class="form-control" placeholder="Last Name"required pattern="[A-Za-z]+">
+          <span>Gender : </span><br><div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions"  value="Male">
+             <label class="form-check-label" for="inlineRadio1">Male</label>
+           </div>
+           <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Female">
+             <label class="form-check-label" for="inlineRadio2">Female</label>
+           </div>
+           <div class="form-check form-check-inline">
+             <input class="form-check-input" type="radio" name="inlineRadioOptions"  value="Other">
+             <label class="form-check-label" for="inlineRadio3">Other</label>
+         </div><br>
+         Email: <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+         Mobile: <input type="tel" class="form-control" placeholder="Mobile"required pattern="98.+">
+         Date of Birth: <input type="date" max="2021-05-02" class="form-control"required>
+         Choose Country:<select name="Country" class="form-control" required>
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Bangladesh">Bangladesh</option>
+          </select>
+         Address: <textarea class="form-control" required></textarea>
+         <span>Skill: </span><br><label class="checkbox-inline">
+            <input type="checkbox" value="">Skill 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Skill 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Skill 3
+          </label><br>
+          <Span>Upload Image: </Span><br><input type="file" accept="image/x-png,image/jpg, image/jpeg" class="" required><br><br>
+          <Input type="submit" value="Reegister" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+</body>
+</html>
